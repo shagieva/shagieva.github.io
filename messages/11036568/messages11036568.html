@@ -1,0 +1,415 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../css/simplePagination.css">
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src=../../js/jquery.dataTables.min.js></script>
+    
+    <script src="../../js/jquery.dataTables.input.js"></script>
+    <script src="../../js/users.js"></script>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+    var messages = [
+        
+        [
+            tUser(parseInt("23898368")),
+            '',
+            timeConverter(parseInt("1488977751")),
+            tAttachments([{"type":"sticker","photo":null,"video":null,"audio":null,"doc":null,"sticker":{"stickerId":86,"productId":2,"photo64":"https://vk.com/images/stickers/86/64b.png","photo128":"https://vk.com/images/stickers/86/128b.png","photo256":"https://vk.com/images/stickers/86/256b.png","photo352":"https://vk.com/images/stickers/86/352b.png","width":228,"height":256},"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\uD83C\uDF39\uD83C\uDF39\uD83C\uDF39\uD83C\uDF39\uD83C\uDF39\uD83C\uDF37\uD83C\uDF37\uD83C\uDF37\uD83C\uDF38\uD83C\uDF38\uD83C\uDF38',
+            timeConverter(parseInt("1488976713")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0421\u041F\u0410\u0421\u0418\u0411\u041E',
+            timeConverter(parseInt("1488976695")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u043F\u0440\u0430\u0437\u0434\u043D\u0438\u043A\u043E\u043C \u0412\u0435\u0441\u043D\u044B!\uD83C\uDF31\uD83C\uDF37\uD83C\uDF38\uD83C\uDF3A\uD83C\uDF39',
+            timeConverter(parseInt("1488976681")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u0414\u043D\u0451\u043C \u0420\u043E\u0436\u0434\u0435\u043D\u0438\u044F, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430!\uD83D\uDC90\uD83C\uDF89\uD83C\uDF88\uD83C\uDF81\n\u0416\u0435\u043B\u0430\u044E \u0412\u0430\u043C \u0441\u0447\u0430\u0441\u0442\u044C\u044F, \u0431\u043B\u0430\u0433\u043E\u043F\u043E\u043B\u0443\u0447\u0438\u044F, \u0442\u0435\u0440\u043F\u0435\u043D\u0438\u044F \u0438 \u0447\u0442\u043E\u0431\u044B \u0434\u0435\u0442\u0438 \u0447\u0430\u0449\u0435 \u0412\u0430\u0441 \u0440\u0430\u0434\u043E\u0432\u0430\u043B\u0438!\uD83D\uDE4B',
+            timeConverter(parseInt("1461446364")),
+            tAttachments([{"type":"photo","photo":{"photoId":411266485,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1461446364,"photo75":"https://pp.userapi.com/c626128/v626128368/4893/mb3CfNqA8e0.jpg","photo130":"https://pp.userapi.com/c626128/v626128368/4894/wMFoF1XOaFI.jpg","photo604":"https://pp.userapi.com/c626128/v626128368/4895/qAUMyJF6Inc.jpg","photo807":null,"photo1280":null,"photo2560":null,"width":444,"height":604},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0418 \u0412\u0430\u043C \u0441\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435!\uD83D\uDE0A',
+            timeConverter(parseInt("1451603180")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0441\u043F\u0430\u0441\u0438\u0431\u043E\uD83C\uDF84\uD83C\uDF85\uD83C\uDF39 \u0438 \u0432\u0430\u0448\u0435\u0439 \u0441\u0435\u043C\u044C\u0435 \u0432\u0441\u0435\u0433\u043E-\u0432\u0441\u0435\u0433\u043E- \u0447\u0442\u043E \u043F\u043E\u0436\u0435\u043B\u0430\u0435\u0442\u0435\uD83C\uDF84',
+            timeConverter(parseInt("1451583832")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u043D\u0430\u0441\u0442\u0443\u043F\u0430\u044E\u0449\u0438\u043C \u041D\u043E\u0432\u044B\u043C \u0413\u043E\u0434\u043E\u043C, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0421\u0447\u0430\u0441\u0442\u044C\u044F, \u0442\u0435\u043F\u043B\u0430, \u0431\u043B\u0430\u0433\u043E\u043F\u043E\u043B\u0443\u0447\u0438\u044F \u0438 \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0436\u0435\u043B\u0430\u043D\u0438\u0439!\uD83C\uDF89\uD83C\uDF84\uD83C\uDF81\uD83C\uDF8A\uD83C\uDF85',
+            timeConverter(parseInt("1451583755")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\uD83D\uDE09\uD83C\uDFA7\uD83C\uDF39\uD83D\uDC95\uD83C\uDFA4\uD83D\uDE03\uD83D\uDC4D \u0441\u043F\u0430\u0441\u0438\u0431\u043E\uD83D\uDC95',
+            timeConverter(parseInt("1444051720")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u0414\u043D\u0451\u043C \u0423\u0447\u0438\u0442\u0435\u043B\u044F, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430!',
+            timeConverter(parseInt("1444051132")),
+            tAttachments([{"type":"photo","photo":{"photoId":382070052,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1444051131,"photo75":"https://pp.userapi.com/c628816/v628816368/14361/CcC6KK5GF74.jpg","photo130":"https://pp.userapi.com/c628816/v628816368/14362/I_vrJctYyRM.jpg","photo604":"https://pp.userapi.com/c628816/v628816368/14363/uf9CL1QhYeY.jpg","photo807":"https://pp.userapi.com/c628816/v628816368/14364/4h2A9acN3pg.jpg","photo1280":null,"photo2560":null,"width":640,"height":640},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u042F \u043D\u0435 \u0437\u043D\u0430\u044E... \u041E\u043D\u0430 \u043D\u0435 \u0437\u0430\u0445\u043E\u0434\u0438\u0442, \u0438 \u043D\u0430 \u0437\u0432\u043E\u043D\u043A\u0438 \u043D\u0435 \u043E\u0442\u0432\u0435\u0447\u0430\u0435\u0442',
+            timeConverter(parseInt("1417718476")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u041D\u0430\u0434\u044F - \u043A\u0443\u0434\u0430 \u0410\u0440\u0438\u043D\u0430 \u043F\u0440\u043E\u043F\u0430\u043B\u0430 ?',
+            timeConverter(parseInt("1417718245")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u041D\u0435 \u0437\u0430 \u0447\u0442\u043E.',
+            timeConverter(parseInt("1417696292")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u044F \u0435\u0435 \u043D\u0430\u0448\u043B\u0430 - \u0441\u043F\u0430\u0441\u0438\u0431\u043E',
+            timeConverter(parseInt("1417695376")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u042F \u043D\u0430\u043F\u0438\u0441\u0430\u043B\u0430 \u0438 \u041A\u0430\u0442\u0435, \u0438 \u0410\u0440\u0438\u043D\u0435\n\u041D\u0430 \u0432\u0441\u044F\u043A\u0438\u0439 \u0441\u043B\u0443\u0447\u0430\u0439 \u0432\u043E\u0442 \u0441\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u041A\u0430\u0442\u0438\u043D\u0443 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443\nhttp:\/\/vk.com\/id6952716',
+            timeConverter(parseInt("1417694900")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0434\u0430\u0439 \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u041F\u043E\u0437\u0434\u043D\u044F\u043A\u043E\u0432\u0443 \u043A\u0430\u0442\u044E',
+            timeConverter(parseInt("1417693500")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '',
+            timeConverter(parseInt("1416519600")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":343570892,"ownerId":23898368,"title":"Тезисы Шагиева.rtf","size":107101,"ext":"rtf","url":"https://vk.com/doc23898368_343570892?hash=201b24e6aa34875805&dl=1488793650258544c428cf82ced5&api=1","date":1416519599,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '',
+            timeConverter(parseInt("1416519584")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":343570824,"ownerId":23898368,"title":"Этапы освоения луны. Шагиева, 11 а. 213.pptx","size":2100901,"ext":"pptx","url":"https://vk.com/doc23898368_343570824?hash=3100896cb8a694a45c&dl=1488793650ec1d50b6e771bcef39&api=1","date":1416519584,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0445\u043E\u0440\u043E\u0448\u043E',
+            timeConverter(parseInt("1416513663")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0410 \u043C\u043E\u0436\u043D\u043E \u044F \u0434\u043E \u0443\u0442\u0440\u0430 \u043F\u0440\u0438\u0448\u043B\u044E? \u042F \u0443\u0436\u0435 \u0434\u043E\u0434\u0435\u043B\u044B\u0432\u0430\u044E',
+            timeConverter(parseInt("1416513327")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0436\u0434\u0443 \u043F\u0440\u0435\u0437\u0435\u043D\u0442\u0430\u0446\u0438\u044E+\u0442\u0435\u0437\u0438\u0441\u044B \u0441\u0440\u043E\u0447\u043D\u043E',
+            timeConverter(parseInt("1416512088")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0412\u043E\u0442 \u043C\u043E\u044F \u043F\u0440\u0435\u0437\u0435\u043D\u0442\u0430\u0446\u0438\u044F. \u0422\u0430\u043C, \u0433\u0434\u0435 \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043E, \u0447\u0442\u043E \u0447\u0435\u0442\u044B\u0440\u0435 \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445 \u044D\u0442\u0430\u043F\u0430, \u0446\u0438\u0444\u0440\u044B - \u044D\u0442\u043E \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043A\u0438, \u0430 \u043F\u043E\u0441\u043B\u0435 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0430 \u043F\u043E \u043D\u0438\u043C \u043D\u0443\u0436\u043D\u043E \u043D\u0430\u0436\u0430\u0442\u044C \u043D\u0430 \u0441\u0442\u0440\u0435\u043B\u043A\u0443, \u0447\u0442\u043E\u0431 \u0432\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043D\u0430 \u0438\u0441\u0445\u043E\u0434\u043D\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443.',
+            timeConverter(parseInt("1416323188")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":342879194,"ownerId":23898368,"title":"Этапы освоения луны.pptx","size":1420247,"ext":"pptx","url":"https://vk.com/doc23898368_342879194?hash=96267c0dfb6aa0b82c&dl=1488793650aeb909fe378b473f8e&api=1","date":1416323176,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\uD83D\uDE0A',
+            timeConverter(parseInt("1415975780")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\uD83D\uDC4D',
+            timeConverter(parseInt("1415975752")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0425\u043E\u0440\u043E\u0448\u043E.',
+            timeConverter(parseInt("1415975736")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u043F\u0435\u0440\u0435\u0434\u0430\u0439 \u0434\u0440\u0443\u0433\u0438\u043C- \u043C\u0435\u043D\u044F \u0437\u0430\u0432\u0442\u0440\u0430 \u043D\u0435\u0442 \u0432 \u0448\u043A\u043E\u043B\u0435',
+            timeConverter(parseInt("1415975716")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E!)',
+            timeConverter(parseInt("1415975692")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043B\u044C \"\u0412\u0435\u0442\u0435\u0440 \u043F\u0435\u0440\u0435\u043C\u0435\u043D\" - \u0413\u0423\u0410\u041F - 2014\n\u041A\u043E\u043D\u043A\u0443\u0440\u0441 \u043F\u0440\u0435\u0437\u0435\u043D\u0442\u0430\u0446\u0438\u0439 \u00AB\u0418\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0435 \u0441\u043F\u0443\u0442\u043D\u0438\u043A\u0438 \u0437\u0435\u043C\u043B\u0438. \u041F\u0440\u043E\u0448\u043B\u043E\u0435.\u041D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435. \u0411\u0443\u0434\u0443\u0449\u0435\u0435\u00BB\n\n9-11 \u043A\u043B\u0430\u0441\u0441\n\u041F\u0440\u0438\u043C\u0435\u0440\u043D\u0430\u044F \u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0430 \u043F\u0440\u0435\u0437\u0435\u043D\u0442\u0430\u0446\u0438\u0439:\n\u00AB\u0418\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0435 \u0441\u043F\u0443\u0442\u043D\u0438\u043A\u0438 \u0437\u0435\u043C\u043B\u0438. \u041F\u0440\u043E\u0448\u043B\u043E\u0435.\u041D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435. \u0411\u0443\u0434\u0443\u0449\u0435\u0435\u00BB\n- \u041F\u0435\u0440\u0432\u044B\u0439 \u0418\u0421\u0417, \u043D\u0430\u0447\u0430\u043B\u043E \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u044D\u0440\u044B;\n- \u041F\u0435\u0440\u0441\u043F\u0435\u043A\u0442\u0438\u0432\u044B \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0435\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0413\u041B\u041E\u041D\u0410\u0421\u0421\n- \u041D\u0430\u0443\u0447\u043D\u043E\u0435 \u043D\u0430\u0441\u043B\u0435\u0434\u0438\u0435 \u041A.\u042D. \u0426\u0438\u043E\u043B\u043A\u043E\u0432\u0441\u043A\u043E\u0433\u043E.\n- \u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u043D\u0430\u0432\u0438\u0433\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u0441\u0438\u0441\u0442\u0435\u043C.\n- \u041C\u0430\u043B\u044B\u0435 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0430\u043F\u043F\u0430\u0440\u0430\u0442\u044B - \u043D\u043E\u0432\u043E\u0435 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0442\u0435\u0445\u043D\u0438\u043A\u0435;\n- \u042D\u0442\u0430\u043F\u044B \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044F \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0442\u0435\u043B\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u043D\u043E\u0433\u043E \u0432\u0435\u0449\u0430\u043D\u0438\u044F.\n- \u041F\u0440\u043E\u0446\u0435\u0441\u0441 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F \u0438 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E \u043C\u043E\u0434\u0443\u043B\u044F \u00AB\u0417\u0430\u0440\u044F\u00BB.\n- \u041F\u0440\u043E\u0435\u043A\u0442\u044B \u0410\u041C\u0421 \u00AB\u041B\u0443\u043D\u0430-2\u00BB \u0438 \u0410\u041C\u0421 \u00AB\u041B\u0443\u043D\u0430 16\u00BB, \u0434\u043E\u0441\u0442\u0438\u0436\u0435\u043D\u0438\u044F.\n- \u0417\u0430\u043F\u0443\u0441\u043A \u041C\u0420\u041A\u041A \u00AB\u042D\u043D\u0435\u0440\u0433\u0438\u044F-\u0411\u0443\u0440\u0430\u043D\u00BB, \u043F\u043E\u043B\u0435\u0442 \u0411\u0443\u0440\u0430\u043D\u0430.\n- \u042D\u0442\u0430\u043F\u044B \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u044F \u041B\u0443\u043D\u044B.\n- PH \u00AB\u0421\u043E\u044E\u0437\u00BB\n\n\u0441\u0434\u0430\u0442\u044C \u043C\u043D\u0435 \u043D\u0435 \u043F\u043E\u0437\u0434\u043D\u0435\u0435 18 \u043D\u043E\u044F\u0431\u0440\u044F 2014\u0433.',
+            timeConverter(parseInt("1415975200")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u0414\u043D\u0451\u043C \u0420\u043E\u0436\u0434\u0435\u043D\u0438\u044F, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430!!! \u0416\u0435\u043B\u0430\u044E \u0432\u0430\u043C \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F, \u0441\u0447\u0430\u0441\u0442\u044C\u044F, \u043B\u044E\u0431\u0432\u0438, \u0434\u043E\u043B\u0433\u043E\u043B\u0435\u0442\u0438\u044F, \u0438, \u0441\u0430\u043C\u043E\u0435 \u0433\u043B\u0430\u0432\u043D\u043E\u0435- \u043F\u043E\u0441\u043B\u0443\u0448\u043D\u044B\u0445 \u0438 \u0434\u043E\u0431\u0440\u043E\u0441\u043E\u0432\u0435\u0441\u0442\u043D\u044B\u0445 \u0443\u0447\u0435\u043D\u0438\u043A\u043E\u0432!)',
+            timeConverter(parseInt("1398169764")),
+            tAttachments([{"type":"photo","photo":{"photoId":326251886,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1398169705,"photo75":"https://pp.userapi.com/c613520/v613520368/baab/QSmVGypT93Q.jpg","photo130":"https://pp.userapi.com/c613520/v613520368/baac/Vw7ZiwVCaa4.jpg","photo604":"https://pp.userapi.com/c613520/v613520368/baad/nkxutFMB5Ks.jpg","photo807":"https://pp.userapi.com/c613520/v613520368/baae/J8iMWU8vz3s.jpg","photo1280":null,"photo2560":null,"width":611,"height":452},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null},{"type":"photo","photo":{"photoId":326251892,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1398169706,"photo75":"https://pp.userapi.com/c613520/v613520368/bac2/P555yR8BKVQ.jpg","photo130":"https://pp.userapi.com/c613520/v613520368/bac3/nppSsMV_dd4.jpg","photo604":"https://pp.userapi.com/c613520/v613520368/bac4/f0XHyQ8JB80.jpg","photo807":null,"photo1280":null,"photo2560":null,"width":598,"height":444},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null},{"type":"photo","photo":{"photoId":326251891,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1398169706,"photo75":"https://pp.userapi.com/c613520/v613520368/bac8/VN8pmvqBMGE.jpg","photo130":"https://pp.userapi.com/c613520/v613520368/baca/S6KVJjg09qY.jpg","photo604":"https://pp.userapi.com/c613520/v613520368/bacb/qQfD1fwhKpg.jpg","photo807":null,"photo1280":null,"photo2560":null,"width":510,"height":592},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null},{"type":"photo","photo":{"photoId":326251888,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1398169705,"photo75":"https://pp.userapi.com/c613520/v613520368/baba/8PNS_raECHs.jpg","photo130":"https://pp.userapi.com/c613520/v613520368/babb/lpw5yV_0v10.jpg","photo604":"https://pp.userapi.com/c613520/v613520368/babc/ow5o6J_WgTQ.jpg","photo807":"https://pp.userapi.com/c613520/v613520368/babd/sALF8-TEe_U.jpg","photo1280":null,"photo2560":null,"width":640,"height":388},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null},{"type":"photo","photo":{"photoId":326251887,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1398169705,"photo75":"https://pp.userapi.com/c613520/v613520368/bab3/vmFlMELItbg.jpg","photo130":"https://pp.userapi.com/c613520/v613520368/bab4/4KNLvxN2wI0.jpg","photo604":"https://pp.userapi.com/c613520/v613520368/bab5/ky0a-WxBBQY.jpg","photo807":null,"photo1280":null,"photo2560":null,"width":475,"height":588},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0432\u043E\u0442, \u0442\u0443\u0442 \u0438\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E)',
+            timeConverter(parseInt("1387479576")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":252855974,"ownerId":23898368,"title":"Nanotekhnologia_i_nanoroboty_Shagieva_Nadya_10a..","size":6108443,"ext":"rtf","url":"https://vk.com/doc23898368_252855974?hash=395a6a54d268d27147&dl=148879365059d82ebaad81bb983b&api=1","date":1387479563,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\uD83D\uDE0A',
+            timeConverter(parseInt("1387479496")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0434\u0430, \u0441\u0435\u0439\u0447\u0430\u0441 \u0438\u0441\u043F\u0440\u0430\u0432\u043B\u044E, \u0441\u043F\u0430\u0441\u0438\u0431\u043E',
+            timeConverter(parseInt("1387479464")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0438\u0441\u043F\u0440\u0430\u0432\u043B\u044F\u0439',
+            timeConverter(parseInt("1387479436")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0434\u0430, \u044F \u0443\u0436\u0435 \u043E\u0442\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043B\u0430, \u043F\u0440\u043E\u0441\u0442\u043E \u043A\u043E\u0433\u0434\u0430 \u044F \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u043B\u0430 \u0431\u044B\u043B\u043E \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E, \u0430 \u043F\u043E\u0442\u043E\u043C \u0441\u0442\u0430\u043B\u043E \u0442\u0430\u043A',
+            timeConverter(parseInt("1387479408")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u043D\u0430 \u043F\u0435\u0440\u0432\u044B\u0445 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0445 \u043E\u0447\u0435\u043D\u044C \u043C\u043D\u043E\u0433\u043E \u0430\u0431\u0437\u0430\u0446\u0435\u0432 \u0438\u0434\u0435\u0442',
+            timeConverter(parseInt("1387479364")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u043E\u0442\u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u0443\u0439 \u043F\u0440\u043E\u043F\u0443\u0441\u043A\u0438',
+            timeConverter(parseInt("1387479347")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u0418\u043D\u0433\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0412\u043E\u0442 \u043C\u043E\u0439 \u0440\u0435\u0444\u0435\u0440\u0430\u0442 \u043D\u0430 \u0442\u0435\u043C\u0443 \"\u041D\u0430\u043D\u043E\u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438 \u0438 \u043D\u0430\u043D\u043E\u0440\u043E\u0431\u043E\u0442\u044B\"',
+            timeConverter(parseInt("1387479220")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":252852658,"ownerId":23898368,"title":"Нанотехнология и нанороботы.Шагиева Надя, 10а.rtf","size":6105436,"ext":"rtf","url":"https://vk.com/doc23898368_252852658?hash=47a4f73871cb13e843&dl=1488793650795e1efc736c6b9e48&api=1","date":1387479216,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0434\u0430',
+            timeConverter(parseInt("1385732524")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u043D\u0435 \u0437\u0430 \u0447\u0442\u043E) \u0430\u0430 \u0442\u043E\u0447\u043D\u043E...\u044F \u043F\u043E\u043C\u043D\u044E, \u0432\u044B \u0435\u0439 \u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0438 \u0434\u0430\u0432\u043D\u043E \u0443\u0436\u0435)',
+            timeConverter(parseInt("1385732508")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0441\u043F\u0430\u0441\u0438\u0431\u043E - \u0443 \u043D\u0435\u0435 \u0432 \u043F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A \u0440\u0430\u0439\u043E\u043D\u043D\u044B\u0439 \u0442\u0443\u0440 \u043F\u043E \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0438 )))) \u044F \u0435\u0439 \u043F\u043E\u0437\u0432\u043E\u043D\u0438\u043B\u0430 ))))',
+            timeConverter(parseInt("1385732474")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\uD83D\uDE04',
+            timeConverter(parseInt("1385732452")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\uD83D\uDE0A  \uD83D\uDC4D',
+            timeConverter(parseInt("1385732311")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '+79214084128',
+            timeConverter(parseInt("1385732256")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("11036568")),
+            '\u0434\u0430\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D \u0410\u0440\u0438\u043D\u044B \u0413\u0430\u0432\u0440\u0438\u043B\u043E\u0432\u043E\u0439',
+            timeConverter(parseInt("1385730628")),
+            tAttachments([])
+        ],
+        
+    ];
+
+    function tUser(fromId) {
+        if (fromId < 2000000000 && users[fromId]) {
+            var user = users[fromId];
+            return '<img src="' + user.photo200Orig + '" width="32" height="32"><br>' + user.firstName + ' ' + user.lastName;
+        } else
+            return 'o_0';
+    }
+
+    function tAttachments(attachments) {
+        if (attachments) {
+            var resultHtml = '';
+            attachments.forEach(function (attachment) {
+                switch (attachment.type) {
+                    case 'photo':
+                        resultHtml += '<a href="' + attachment.photo.photo604 + '" target="_blank"><img src="' + attachment.photo.photo130 + '" width="64" height="64"></a>';
+                        break;
+                    case 'sticker':
+                        resultHtml += '<img src="' + attachment.sticker.photo64 + '" width="64" height="64">';
+                        break;
+                    case 'gift':
+                        resultHtml += '<img src="' + attachment.gift.thumb96 + '" width="64" height="64">';
+                        break;
+                    case 'audio':
+                        resultHtml += '[audio: ' + attachment.audio.title + '], ';
+                        break;
+                    case 'doc':
+                        switch (attachment.doc.type) {
+                            case 5:
+                                resultHtml += '<a href="' + attachment.doc.url + '" target="_blank">[voice]</a>';
+                                break;
+                            default:
+                                resultHtml += '[doc: ' + attachment.doc.title + '], ';
+                                break;
+                        }
+                        break;
+                    default:
+                        resultHtml += attachment.type + ', ';
+                        break;
+                }
+            });
+            return resultHtml;
+        } else return '';
+    }
+
+    $(document).ready(function () {
+        $('#dialogs').DataTable({
+            data: messages,
+            ordering: false,
+            dom: '<"top"iflp<"clear">>rt<"bottom"iflp<"clear">>'
+        });
+    });
+</script>
+
+<table id="dialogs" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </tfoot>
+</table>
+
+
+
+</body>
+</html>

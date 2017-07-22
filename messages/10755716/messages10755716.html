@@ -1,0 +1,534 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../css/simplePagination.css">
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src=../../js/jquery.dataTables.min.js></script>
+    
+    <script src="../../js/jquery.dataTables.input.js"></script>
+    <script src="../../js/users.js"></script>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+    var messages = [
+        
+        [
+            tUser(parseInt("23898368")),
+            '',
+            timeConverter(parseInt("1476304560")),
+            tAttachments([{"type":"photo","photo":{"photoId":0,"albumId":0,"ownerId":0,"userId":null,"text":"","date":0,"photo75":"https://vk.com/images/s_null.gif","photo130":"https://vk.com/images/m_null.gif","photo604":"https://vk.com/images/x_null.gif","photo807":null,"photo1280":null,"photo2560":null,"width":null,"height":null},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E\uD83D\uDE0A',
+            timeConverter(parseInt("1452891792")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u043F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u044E',
+            timeConverter(parseInt("1452881704")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '',
+            timeConverter(parseInt("1452881704")),
+            tAttachments([{"type":"sticker","photo":null,"video":null,"audio":null,"doc":null,"sticker":{"stickerId":33,"productId":1,"photo64":"https://vk.com/images/stickers/33/64b.png","photo128":"https://vk.com/images/stickers/33/128b.png","photo256":"https://vk.com/images/stickers/33/256b.png","photo352":"https://vk.com/images/stickers/33/352b.png","width":244,"height":256},"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '',
+            timeConverter(parseInt("1449616820")),
+            tAttachments([{"type":"sticker","photo":null,"video":null,"audio":null,"doc":null,"sticker":{"stickerId":37,"productId":1,"photo64":"https://vk.com/images/stickers/37/64b.png","photo128":"https://vk.com/images/stickers/37/128b.png","photo256":"https://vk.com/images/stickers/37/256b.png","photo352":"https://vk.com/images/stickers/37/352b.png","width":212,"height":256},"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0418\u0437\u0432\u0438\u043D\u044F\u044E\u0441\u044C, \u0447\u0442\u043E \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0441 \u043E\u043F\u043E\u0437\u0434\u0430\u043D\u0438\u0435\u043C, \u043D\u043E \u0441 \u041F\u0440\u043E\u0448\u0435\u0434\u0448\u0438\u043C \u0414\u043D\u0451\u043C \u0420\u043E\u0436\u0434\u0435\u043D\u0438\u044F!\uD83D\uDE0A',
+            timeConverter(parseInt("1449567028")),
+            tAttachments([{"type":"photo","photo":{"photoId":390715597,"albumId":-3,"ownerId":23898368,"userId":null,"text":"","date":1449567027,"photo75":"https://pp.userapi.com/c625420/v625420368/3cadc/0e0ImjeSVho.jpg","photo130":"https://pp.userapi.com/c625420/v625420368/3cadd/UjZ6ed_i2-E.jpg","photo604":"https://pp.userapi.com/c625420/v625420368/3cade/1LNJiJsn0cY.jpg","photo807":null,"photo1280":null,"photo2560":null,"width":400,"height":306},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u0443\u043F\u0435\u0440) \n\u041F\u043E\u0441\u043B\u0435 \u041A\u043E\u0440\u043E\u0431\u0438\u0446\u044B\u043D\u043E \u044D\u0442\u043E\u0442 \u043C\u043D\u0435 \u043F\u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F \u0441\u043E\u0432\u0441\u0435\u043C \u043B\u0435\u0433\u043A\u0438\u043C',
+            timeConverter(parseInt("1442211912")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041D\u0443 \u043A\u0430\u043A \u0442\u0430\u043C',
+            timeConverter(parseInt("1442176756")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '',
+            timeConverter(parseInt("1442176756")),
+            tAttachments([{"type":"sticker","photo":null,"video":null,"audio":null,"doc":null,"sticker":{"stickerId":7,"productId":1,"photo64":"https://vk.com/images/stickers/7/64b.png","photo128":"https://vk.com/images/stickers/7/128b.png","photo256":"https://vk.com/images/stickers/7/256b.png","photo352":"https://vk.com/images/stickers/7/352b.png","width":224,"height":256},"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041E\u043A',
+            timeConverter(parseInt("1441649572")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u0430\u0432\u0430\u0439\u0442\u0435) \u0442\u043E\u043B\u044C\u043A\u043E \u0442\u0430\u043C \u043F\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F \u0443\u0436\u0435 \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B\u0430\u0441\u044C, \u0442\u0435\u043F\u0435\u0440\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u043D\u0430 \u043C\u0435\u0441\u0442\u0435',
+            timeConverter(parseInt("1441649544")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0442\u043E\u0436\u0435 \u0445\u043E\u0447\u0443',
+            timeConverter(parseInt("1441649472")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            'http:\/\/lemrace.ru',
+            timeConverter(parseInt("1441649411")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435) \u0441\u0435\u0439\u0447\u0430\u0441 \u0441\u043A\u0438\u043D\u0443',
+            timeConverter(parseInt("1441649300")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '',
+            timeConverter(parseInt("1441646768")),
+            tAttachments([{"type":"sticker","photo":null,"video":null,"audio":null,"doc":null,"sticker":{"stickerId":7,"productId":1,"photo64":"https://vk.com/images/stickers/7/64b.png","photo128":"https://vk.com/images/stickers/7/128b.png","photo256":"https://vk.com/images/stickers/7/256b.png","photo352":"https://vk.com/images/stickers/7/352b.png","width":224,"height":256},"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041F\u0440\u0438\u0432\u0435\u0442,\u0441\u043A\u0438\u043D\u044C \u0441\u0441\u044B\u043B\u043A\u0443 \u043F\u0440\u043E \u041B\u0435\u043C\u0431\u043E\u043B\u043E\u0432\u043E',
+            timeConverter(parseInt("1441646720")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041F\u0440\u0438\u0432\u0435\u0442.\u041D\u0435 \u043C\u043E\u0433\u0443 \u0434\u043E \u043F\u0430\u043F\u0430\u043D\u0438 \u0434\u043E\u0437\u0432\u043E\u043D\u0438\u0442\u044C\u0441\u044F \u0433\u0434\u0435 \u043E\u043D?',
+            timeConverter(parseInt("1439205092")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u0430, \u0441\u043F\u0430\u0441\u0438\u0431\u043E)',
+            timeConverter(parseInt("1361216888")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041E\u041A \u0441\u043F\u0438\uD83D\uDE0C',
+            timeConverter(parseInt("1361216864")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u041D\u0443 \u043B\u0430\u0434\u043D\u043E, \u044F \u043F\u043E\u0439\u0434\u0443, \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u043E\u0439 \u043D\u043E\u0447\u0438, \u0434\u044F\u0434\u044F \u041B\u0435\u043D\u044F:*))',
+            timeConverter(parseInt("1361216796")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041F\u043E\u043D\u044F\u0442\u043D\u043E)))',
+            timeConverter(parseInt("1361216679")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u0435\u0441\u0442\u0440\u044B, \u0432\u0440\u043E\u0434\u0435 \u043A\u0430\u043A \u0442\u043E\u0436\u0435 \u043D\u0435 \u0437\u0430\u043C\u0443\u0436\u0435\u043C)))',
+            timeConverter(parseInt("1361216679")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u041C\u043D\u0435 \u0438 \u0442\u0430\u043A \u0445\u043E\u0440\u043E\u0448\u043E:)',
+            timeConverter(parseInt("1361216660")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0410 \u0441\u0451\u0441\u0442\u0440\u044B?',
+            timeConverter(parseInt("1361216636")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0412 \u0441\u043C\u044B\u0441\u043B\u0435????',
+            timeConverter(parseInt("1361216616")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0410 \u0447\u0442\u043E, \u0447\u0442\u043E-\u0442\u043E \u043D\u0435 \u0442\u0430\u043A?',
+            timeConverter(parseInt("1361216600")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0410 \u0443 \u0442\u0435\u0431\u044F \u0440\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A\u0438 \u0442\u0440\u0435\u0431\u0443\u044E\u0442 \u043A\u043E\u0440\u0440\u0435\u043A\u0442\u0438\u0440\u043E\u0432\u043A\u0438',
+            timeConverter(parseInt("1361216600")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u0430 \u043B\u0430\u0434\u043D\u043E, \u0430 \u0442\u0430\u043A \u0431\u044B\u043B\u043E \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E?:)',
+            timeConverter(parseInt("1361216515")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0411\u043B\u0438\u043D \u0442\u043E\u043A\u0430 \u0441\u0442\u0447\u0430\u0441 \u0437\u0430\u043C\u0435\u0442\u0438\u043B \u0447\u0442\u043E \u0442\u044B \u043D\u0435\u0437\u0430\u043C\u0443\u0436\u0435\u043C!',
+            timeConverter(parseInt("1361216034")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0445\u043E\u0440\u043E\u0448\u043E',
+            timeConverter(parseInt("1360602232")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041D\u0430\u0431\u0435\u0440\u0438 \u0432 \u044F\u043D\u0434\u0435\u043A\u0441 \u043A\u0430\u0440\u0442\u0430\u0445',
+            timeConverter(parseInt("1360602120")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u044F \u0441\u043B\u0443\u0447\u0430\u0439\u043D\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0438\u043A \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0430 \u043D\u0435 \u0442\u0430\u043C, \u0433\u0434\u0435 \u043D\u0430\u0434\u043E)',
+            timeConverter(parseInt("1360601210")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '?',
+            timeConverter(parseInt("1360601183")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0430 \u0433\u0434\u0435 \u0420\u0443?\u0441\u043A\u0435\u0430\u043B\u0430',
+            timeConverter(parseInt("1360601175")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041C\u0440\u0430\u043C\u043E\u0440\u043D\u044B\u0439 \u043A\u0430\u0440\u044C\u0435\u0440 \u0432 \u0420\u0443\u0441\u043A\u0435\u0430\u043B\u0430',
+            timeConverter(parseInt("1360600420")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0434\u0430!\u0422\u0430\u043C \u043E\u0447\u0435\u043D\u044C \u043A\u0440\u0430\u0441\u0438\u0432\u043E!\u0410 \u0433\u0434\u0435 \u044D\u0442\u043E?',
+            timeConverter(parseInt("1360600372")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            'http:\/\/vk.com\/feed#\/event48711275',
+            timeConverter(parseInt("1360600219")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0442\u0441\u0432\u0443\u0439\u0442\u0435, \u0445\u043E\u0440\u043E\u0448\u043E, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u044E)',
+            timeConverter(parseInt("1360600207")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041F\u0440\u0438\u0432\u0435\u0442,\u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438 \u0432\u0441\u0435 \u0444\u043E\u0442\u043A\u0438 \u0438\u0437 \u044D\u0442\u043E\u0433\u043E \u0430\u043B\u044C\u0431\u043E\u043C\u0430!',
+            timeConverter(parseInt("1360600144")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\uD83D\uDE0A',
+            timeConverter(parseInt("1355684940")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0434\u044F\u0434\u044F \u041B\u0435\u043D\u044F, \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u043E\u0439 \u043D\u043E\u0447\u0438))',
+            timeConverter(parseInt("1355684868")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0413\u043E\u0442\u043E\u0432\u043E)))',
+            timeConverter(parseInt("1355684572")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!\n\u041F\u0440\u043E\u0433\u043E\u043B\u043E\u0441\u0443\u0439\u0442\u0435 \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0435\u0441\u043B\u0438 \u043D\u0435 \u0441\u043B\u043E\u0436\u043D\u043E, \u0437\u0430 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u0442\u0430!(\u0435\u0433\u043E \u043A\u043B\u0438\u0447\u043A\u0430: \u0421\u043E\u043D, \u043B\u0438\u0447\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440:7343)\u0412\u043E\u0442 \u0441\u0430\u0439\u0442: http:\/\/www.qdog.ru\/zoocity \u0414\u043B\u044F \u0444\u0438\u043A\u0441\u0430\u0446\u0438\u0438 \u0433\u043E\u043B\u043E\u0441\u0430 \u043D\u0443\u0436\u043D\u043E \u043F\u043E\u0431\u044B\u0442\u044C \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u043C\u0438\u043D\u0443\u0442\u0443! \u0417\u0430\u0440\u0430\u043D\u0435\u0435 \u041E\u0413\u0420\u041E\u041C\u041D\u041E\u0415 \u0441\u043F\u0430\u0441\u0438\u0431\u043E!!!',
+            timeConverter(parseInt("1355683680")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u0434\u043D\u0435\u043C \u0422\u043E\u0440\u0442\u0430 \u0432\u0430\u0441:)',
+            timeConverter(parseInt("1354906952")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0410 \u0431\u0430\u0438\u043D\u044C\u043A\u0438 \u0437\u0430\u0432\u0442\u0440\u0430 \u043F\u0430\u043F\u0430\u043D\u044F \u043E\u043F\u044F\u0442\u044C \u043D\u0435 \u043F\u043E\u0434\u044B\u043C\u0435\u0442)))',
+            timeConverter(parseInt("1352921808")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u043B\u0430\u0434\u043D\u043E, \u0441\u043A\u0430\u0436\u0443, \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u043E\u0439 \u043D\u043E\u0447\u0438!)',
+            timeConverter(parseInt("1349987968")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u042F \u0437\u0430\u0432\u0442\u0440\u0430 \u043F\u043E\u0437\u0434\u043D\u043E \u0432\u0441\u0442\u0430\u044E \u0430 \u0442\u0435\u0431\u0435 \u0432 \u0441\u0432\u0435\u0442\u043E\u0447 \u0437\u043D\u0430\u043D\u0438\u0439 \u043A\u0441\u0442\u0430\u0442\u0438 \u0441\u043A\u0430\u0436\u0435\u0448\u044C \u043F\u0430\u043F\u0435 \u0447\u0442\u043E \u043C\u0435\u043D\u044F \u043D\u0435 \u0431\u0443\u0434\u0435\u0442...',
+            timeConverter(parseInt("1349986748")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0438 \u0432\u044B \u0442\u043E\u0436\u0435!!!',
+            timeConverter(parseInt("1349986432")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0445\u0438-\u0445\u0438-\u0445\u0438, \u0441\u0435\u0439\u0447\u0430\u0441 \u043B\u044F\u0433\u0443))',
+            timeConverter(parseInt("1349986428")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0411\u044B\u0441\u0442\u0440\u043E \u0441\u043F\u0430\u0442\u044C!!!',
+            timeConverter(parseInt("1349985756")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u043E\u043A, \u0441\u043A\u0430\u0436\u0443)',
+            timeConverter(parseInt("1348768940")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u041D\u0430\u0434\u044E\u0445\u0430 \u0441\u043A\u0430\u0436\u0438 \u043F\u0430\u043F\u0430\u043D\u0435 \u0447\u0442\u043E \u044F \u0442\u0435\u043B\u0435\u0444\u043E\u043D \u0443 \u043D\u0435\u0433\u043E \u0432 \u043C\u0430\u0448\u0438\u043D\u0435 \u043E\u0441\u0442\u0430\u0432\u0438\u043B \u043F\u0443\u0441\u0442\u044C \u0437\u0432\u043E\u043D\u0438\u0442 \u043D\u0430 \u0434\u043E\u043C\u0430\u0448\u043D\u0438\u0439 4528932',
+            timeConverter(parseInt("1348763884")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435, \u043F\u0430\u043F\u0430 \u043D\u0435 \u043C\u043E\u0436\u0435\u0442 \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0432\u0430\u0441 \u0432 \u0434\u0440\u0443\u0437\u044C\u044F, \u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u0443 \u043D\u0435\u0433\u043E \u0432\u0437\u043B\u043E\u043C\u0430\u043B\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0447\u043A\u0443=)',
+            timeConverter(parseInt("1274978752")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u042F \u0442\u043E\u0436\u0435!',
+            timeConverter(parseInt("1265214312")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u042F \u043D\u0430\u0434\u0435\u044E\u0441\u044C !',
+            timeConverter(parseInt("1265133568")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u041C\u044B \u0432\u0441\u043F\u043E\u043C\u043D\u0438\u043C \u0438\u043B\u0438 \u043D\u0430\u0439\u0434\u0451\u043C \u0431\u0443\u043C\u0430\u0436\u043A\u0443, \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u044B \u043F\u0430\u043F\u0438\u043D \u043F\u0430\u0440\u043E\u043B\u044C \u0438 \u0438\u043C\u044D\u0439\u043B!',
+            timeConverter(parseInt("1265121388")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u0414\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430.........',
+            timeConverter(parseInt("1265052312")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0438\u0437\u0432\u0438\u043D\u0438\u0442\u0435 \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430,, \u043C\u044B \u0437\u0430\u0431\u044B\u043B\u0438 \u043F\u0430\u0440\u043E\u043B\u044C \u043E\u0442 \u043F\u0430\u043F\u0438\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0447\u043A\u0438!',
+            timeConverter(parseInt("1265045108")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u041F\u0435\u0440\u0435\u0434\u0430\u044E \u043F\u0440\u0438\u0432\u0435\u0442 \u043E\u0442 \u043F\u0430\u043F\u044B!     \u0410 \u043C\u043E\u0436\u043D\u043E \u0432\u0430\u0441 \u0432 \u0434\u0440\u0443\u0437\u044C\u044F \u0434\u043E\u0431\u0430\u0432\u0438\u0442\u044C?',
+            timeConverter(parseInt("1264874120")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0445\u043E\u0440\u043E\u0448\u043E!',
+            timeConverter(parseInt("1264873964")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("10755716")),
+            '\u043F\u0440\u043E\u0432\u0435\u0440\u044C \u043F\u0430\u043F\u0438\u043D\u0443 \u0441\u0442\u0440\u0430\u043D\u0438\u0447\u043A\u0443...',
+            timeConverter(parseInt("1264801900")),
+            tAttachments([])
+        ],
+        
+    ];
+
+    function tUser(fromId) {
+        if (fromId < 2000000000 && users[fromId]) {
+            var user = users[fromId];
+            return '<img src="' + user.photo200Orig + '" width="32" height="32"><br>' + user.firstName + ' ' + user.lastName;
+        } else
+            return 'o_0';
+    }
+
+    function tAttachments(attachments) {
+        if (attachments) {
+            var resultHtml = '';
+            attachments.forEach(function (attachment) {
+                switch (attachment.type) {
+                    case 'photo':
+                        resultHtml += '<a href="' + attachment.photo.photo604 + '" target="_blank"><img src="' + attachment.photo.photo130 + '" width="64" height="64"></a>';
+                        break;
+                    case 'sticker':
+                        resultHtml += '<img src="' + attachment.sticker.photo64 + '" width="64" height="64">';
+                        break;
+                    case 'gift':
+                        resultHtml += '<img src="' + attachment.gift.thumb96 + '" width="64" height="64">';
+                        break;
+                    case 'audio':
+                        resultHtml += '[audio: ' + attachment.audio.title + '], ';
+                        break;
+                    case 'doc':
+                        switch (attachment.doc.type) {
+                            case 5:
+                                resultHtml += '<a href="' + attachment.doc.url + '" target="_blank">[voice]</a>';
+                                break;
+                            default:
+                                resultHtml += '[doc: ' + attachment.doc.title + '], ';
+                                break;
+                        }
+                        break;
+                    default:
+                        resultHtml += attachment.type + ', ';
+                        break;
+                }
+            });
+            return resultHtml;
+        } else return '';
+    }
+
+    $(document).ready(function () {
+        $('#dialogs').DataTable({
+            data: messages,
+            ordering: false,
+            dom: '<"top"iflp<"clear">>rt<"bottom"iflp<"clear">>'
+        });
+    });
+</script>
+
+<table id="dialogs" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </tfoot>
+</table>
+
+
+
+</body>
+</html>

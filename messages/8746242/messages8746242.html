@@ -1,0 +1,401 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../../css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../css/simplePagination.css">
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src=../../js/jquery.dataTables.min.js></script>
+    
+    <script src="../../js/jquery.dataTables.input.js"></script>
+    <script src="../../js/users.js"></script>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+    var messages = [
+        
+        [
+            tUser(parseInt("8746242")),
+            '\uD83D\uDE09\uD83D\uDE18\uD83D\uDE0A',
+            timeConverter(parseInt("1484510682")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435!\uD83D\uDE0A\n\u041E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u043E \u0438 \u043D\u0435\u043E\u0436\u0438\u0434\u0430\u043D\u043D\u043E!\u263A\uFE0F',
+            timeConverter(parseInt("1484509220")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041D\u0430\u0434\u044E\u0448\u0430, \u0441 \u0414\u043D\u0451\u043C \u0420\u043E\u0436\u0434\u0435\u043D\u0438\u044F! \u0411\u0443\u0434\u044C\u0442\u0435 \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u044B \u043A\u0430\u0436\u0434\u0443\u044E \u0441\u0435\u043A\u0443\u043D\u0434\u043E\u0447\u043A\u0443\uD83C\uDF38\uD83C\uDF38\uD83C\uDF38',
+            timeConverter(parseInt("1484500446")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u043E\u0435, \u041D\u0430\u0434\u044E\u0448\u0430, \u043E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u043E)))\uD83C\uDF3A\uD83C\uDF38\uD83C\uDF3A',
+            timeConverter(parseInt("1468936396")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421 \u0414\u043D\u0451\u043C \u0420\u043E\u0436\u0434\u0435\u043D\u0438\u044F, \u0410\u043D\u043D\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430!\uD83D\uDC90\uD83C\uDF38\uD83C\uDF37\n\u041B\u044E\u0431\u0432\u0438 \u0412\u0430\u043C, \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u044F, \u043F\u043E\u0441\u043B\u0443\u0448\u043D\u044B\u0445 \u0443\u0447\u0435\u043D\u0438\u043A\u043E\u0432 \u0438 \u0447\u0442\u043E\u0431\u044B \u0431\u043B\u0438\u0437\u043A\u0438\u0435 \u0440\u0430\u0434\u043E\u0432\u0430\u043B\u0438 \u0447\u0430\u0449\u0435!\uD83D\uDC9D',
+            timeConverter(parseInt("1468771426")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0445\u043E\u0440\u043E\u0448\u043E)',
+            timeConverter(parseInt("1465234504")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0425\u043E\u0440\u043E\u0448\u043E)\n\u0422\u043E\u0433\u0434\u0430 \u0434\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0438)',
+            timeConverter(parseInt("1465233655")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0443\u0436\u0435 \u0432\u044B\u044F\u0441\u043D\u0438\u043B\u0430, \u0437\u0430\u0432\u0442\u0440\u0430 \u043F\u043E\u0434\u043E\u0439\u0434\u0443 \u043A \u0432\u0430\u043C, \u043D\u043E \u043F\u043E\u043F\u043E\u0437\u0436\u0435-\u0447\u0430\u0441\u0430 \u0432 2 \u043D\u0430\u0432\u0435\u0440\u043D\u043E\u0435 \u043A\u0430\u043A \u0437\u0430\u043A\u043E\u043D\u0447\u0430\u0442\u0441\u044F \u0437\u0430\u0449\u0438\u0442\u044B \u043C\u0430\u0433\u0438\u0441\u0442\u0435\u0440\u0441\u043A\u0438\u0445 \u0434\u0438\u0441\u0441\u0435\u0440\u0442\u0430\u0446\u0438\u0439',
+            timeConverter(parseInt("1465232534")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0412 10:00 \u0432 210 \u0430\u0443\u0434.\n\u0420\u0430\u0437\u0433\u043E\u0432\u043E\u0440 - \u0418\u0440\u0438\u043D\u0430 \u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u043D\u0430 \u041B\u0435\u043A\u043E\u043C\u0446\u0435\u0432\u0430 (\u043E\u043D\u0430 \u0442\u043E\u0447\u043D\u043E \u0431\u0443\u0434\u0435\u0442)\n\u0427\u0442\u0435\u043D\u0438\u0435 - \u0410\u0434\u0435\u043B\u044F \u0425\u0430\u043C\u0438\u0442\u043E\u0432\u043D\u0430 \u0410\u0431\u0434\u0443\u043B\u044C\u043C\u0430\u043D\u043E\u0432\u0430 (\u0435\u0435 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442)',
+            timeConverter(parseInt("1465211870")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0438 \u043A\u0442\u043E \u0443 \u0432\u0430\u0441 \u043F\u0440\u0435\u043F\u043E\u0434\u0430\u0432\u0430\u043B \u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440 \u0438 \u0434\u043E\u043C \u0447\u0442\u0435\u043D\u0438\u0435, \u043E\u043D\u0438 \u043F\u0440\u0438\u0434\u0443\u0442 \u043A \u0432\u0430\u043C \u043D\u0430 \u044D\u043A\u0437\u0430\u043C\u0435\u043D, \u043D\u0435 \u0437\u043D\u0430\u0435\u0442\u0435?',
+            timeConverter(parseInt("1465188400")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u043D\u0443\u0436\u043D\u043E \u0437\u043D\u0430\u0442\u044C \u0442\u043E\u0447\u043D\u043E\u0435 \u0432\u0440\u0435\u043C\u044F \u0438 \u043C\u0435\u0441\u0442\u043E',
+            timeConverter(parseInt("1465188370")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u042F 7\u0433\u043E \u043D\u0430 \u0437\u0430\u0449\u0438\u0442\u0435 \u043C\u0430\u0433\u0438\u0441\u0442\u0435\u0440\u0441\u043A\u0438\u0445 \u043C\u043E\u0438\u0445',
+            timeConverter(parseInt("1465186401")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0412\u043E \u0441\u043A \u0438 \u0430\u0443\u0434?',
+            timeConverter(parseInt("1465186370")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!)\n\u0423 \u043D\u0430\u0441 7-\u0433\u043E.',
+            timeConverter(parseInt("1465173655")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041D\u0430\u0434\u044E\u0448\u0430, \u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435!  \u041F\u043E\u0434\u0441\u043A\u0430\u0436\u0438\u0442\u0435, \u043A\u0430\u043A\u043E\u0433\u043E \u0447\u0438\u0441\u043B\u0430, \u0432\u043E \u0441\u043A \u0438 \u0433\u0434\u0435 \u0443 \u0432\u0430\u0448\u0435\u0439 \u0433\u0440\u0443\u043F\u043F\u044B \u044D\u043A\u0437\u0430\u043C\u0435\u043D \u043F\u043E \u0430\u043D\u0433\u043B',
+            timeConverter(parseInt("1465156020")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\uD83D\uDE0A',
+            timeConverter(parseInt("1463659564")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E!)',
+            timeConverter(parseInt("1463649508")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0412\u043E\u0442\uD83D\uDE0A',
+            timeConverter(parseInt("1463606768")),
+            tAttachments([{"type":"photo","photo":{"photoId":413760642,"albumId":-3,"ownerId":8746242,"userId":null,"text":"","date":1463606767,"photo75":"https://pp.userapi.com/c626527/v626527242/9b86/QFwxtAeBM-A.jpg","photo130":"https://pp.userapi.com/c626527/v626527242/9b87/39Roy71B1G8.jpg","photo604":"https://pp.userapi.com/c626527/v626527242/9b88/IP59yKiIVwA.jpg","photo807":"https://pp.userapi.com/c626527/v626527242/9b89/cwKeIR-T2RI.jpg","photo1280":"https://pp.userapi.com/c626527/v626527242/9b8a/R9rMCs4tTdU.jpg","photo2560":"https://pp.userapi.com/c626527/v626527242/9b8b/0Bpexva8yts.jpg","width":1632,"height":1224},"video":null,"audio":null,"doc":null,"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0425\u043E\u0440\u043E\u0448\u043E, \u0441\u043F\u0430\u0441\u0438\u0431\u043E!)',
+            timeConverter(parseInt("1463577352")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0441\u043F\u0430\u0441\u0438\u0431\u043E! \u0432\u0435\u0447\u0435\u0440\u043A\u043E\u043C \u0432\u044B\u0448\u043B\u044E))',
+            timeConverter(parseInt("1463577336")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C, \u0410\u043D\u043D\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0412\u044B \u043F\u0440\u043E\u0441\u0438\u043B\u0438 \u043D\u0430\u043F\u043E\u043C\u043D\u0438\u0442\u044C \u043F\u0440\u043E \u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C\u043D\u0443\u044E \u0434\u043B\u044F \u0442\u0440\u0435\u043D\u0438\u0440\u043E\u0432\u043A\u0438',
+            timeConverter(parseInt("1463577292")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E\uD83D\uDE0A',
+            timeConverter(parseInt("1461616456")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0412\u044B\u0437\u0434\u043E\u0440\u0430\u0432\u043B\u0438\u0432\u0430\u0439\u0442\u0435!',
+            timeConverter(parseInt("1461611312")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041D\u0430\u0434\u044E\u0448\u0430, \u043D\u0443 \u043F\u043E\u0445\u043E\u0436\u0435 \u043C\u043D\u0435 \u043D\u0435 \u043B\u0443\u0447\u0448\u0435, \u0442\u0430\u043A \u0447\u0442\u043E \u0437\u0430\u0432\u0442\u0440\u0430 \u043F\u0430\u0440\u044B \u043D\u0435 \u0431\u0443\u0434\u0435\u0442',
+            timeConverter(parseInt("1461606860")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0410, \u043B\u0430\u0434\u043D\u043E. \u041F\u043E\u043F\u0440\u0430\u0432\u043B\u044F\u0439\u0442\u0435\u0441\u044C!',
+            timeConverter(parseInt("1461601072")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0435\u0441\u043B\u0438 \u0432\u0434\u0440\u0443\u0433 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0441\u0438\u043B\u044C\u043D\u043E \u043F\u043E\u0432\u044B\u0441\u0438\u0442\u0441\u044F, \u0434\u0430\u043C \u0432\u0430\u043C \u0437\u043D\u0430\u0442\u044C',
+            timeConverter(parseInt("1461596072")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0447\u0442\u043E \u0442\u043E \u043F\u043E\u0445\u043E\u0436\u0435 \u044F \u043E\u043F\u044F\u0442\u044C \u0437\u0430\u0431\u043E\u043B\u0435\u0432\u0430\u044E',
+            timeConverter(parseInt("1461596044")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0441\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0435',
+            timeConverter(parseInt("1461596024")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0434\u0430\u0432\u0430\u0439\u0442\u0435 \u043F\u043E\u043A\u0430 \u0431\u0435\u0437 \u043D\u0435\u0433\u043E',
+            timeConverter(parseInt("1461596020")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u043E\u0431\u0440\u044B\u0439 \u0434\u0435\u043D\u044C, \u0410\u043D\u043D\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0410 \u0432\u044B \u043D\u0435 \u043C\u043E\u0433\u043B\u0438 \u0431\u044B \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C, \u043A\u0430\u043A\u0438\u0435 \u043D\u0430\u043C \u043D\u043E\u043C\u0435\u0440\u0430 \u0438\u0437 \u044D\u0442\u043E\u0433\u043E \u0443\u0447\u0435\u0431\u043D\u0438\u043A\u0430 \u0434\u0435\u043B\u0430\u0442\u044C?',
+            timeConverter(parseInt("1461595421")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '',
+            timeConverter(parseInt("1461402224")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0421\u043F\u0430\u0441\u0438\u0431\u043E)',
+            timeConverter(parseInt("1459109056")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440, \u0410\u043D\u043D\u0430 \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043D\u0430! \u0425\u043E\u0440\u043E\u0448\u043E, \u043F\u0435\u0440\u0435\u0434\u0430\u043C. \u041F\u043E\u043F\u0440\u0430\u0432\u043B\u044F\u0439\u0442\u0435\u0441\u044C\uD83D\uDE0A',
+            timeConverter(parseInt("1459108932")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041D\u0430\u0434\u044E\u0448\u0430, \u0432\u043E \u0432\u0442 \u043C\u0435\u043D\u044F \u0435\u0449\u0435 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442. \u0414\u043E 1\u0433\u043E \u0442\u043E\u0447\u043D\u043E \u043D\u0430 \u0431\u043E\u043B\u044C\u043D\u0438\u0447\u043D\u043E\u043C. \u041F\u0435\u0440\u0435\u0434\u0430\u0439\u0442\u0435 \u0437\u0430\u0432\u0442\u0440\u0430 \u0432\u0441\u0435\u043C, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430.',
+            timeConverter(parseInt("1459103240")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\uD83D\uDE0A',
+            timeConverter(parseInt("1445106316")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041E\u0442\u043B\u0438\u0447\u043D\u043E! \u0412\u0430\u043C \u0441\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u0441\u043E\u043E\u0431\u0449\u0438\u043B\u0438))',
+            timeConverter(parseInt("1445099760")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u0430, \u0435\u0441\u0442\u044C. \n\u0421\u043F\u0430\u0441\u0438\u0431\u043E!)',
+            timeConverter(parseInt("1445099744")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u0410 \u0432\u043E\u0442 \u0442\u0430\u043A?',
+            timeConverter(parseInt("1445099720")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '',
+            timeConverter(parseInt("1445099712")),
+            tAttachments([{"type":"doc","photo":null,"video":null,"audio":null,"doc":{"docId":368228521,"ownerId":8746242,"title":"English Grammar in Use_Murphy 4th edition.pdf","size":123324150,"ext":"pdf","url":"https://vk.com/doc8746242_368228521?hash=c0424abb33e3b202c2&dl=1488793469d3a86da47f37cd755c&api=1","date":1424350886,"type":1},"sticker":null,"link":null,"gift":null}])
+        ],
+        
+        [
+            tUser(parseInt("23898368")),
+            '\u0414\u043E\u0431\u0440\u044B\u0439 \u0432\u0435\u0447\u0435\u0440! \u0410 \u0443 \u043C\u0435\u043D\u044F \u043F\u043E\u0447\u0435\u043C\u0443-\u0442\u043E \u043C\u043D\u043E\u0433\u043E\u0442\u043E\u0447\u0438\u0435, \u0430 \u0444\u0430\u0439\u043B\u0430 \u043D\u0435\u0442',
+            timeConverter(parseInt("1445099624")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '\u041D\u0430\u0434\u044E\u0448\u0430, \u043F\u0435\u0440\u0435\u0448\u043B\u0438\u0442\u0435 \u0432\u0441\u0435\u043C \u0432 \u0433\u0440\u0443\u043F\u043F\u0435, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430',
+            timeConverter(parseInt("1445099072")),
+            tAttachments([])
+        ],
+        
+        [
+            tUser(parseInt("8746242")),
+            '...',
+            timeConverter(parseInt("1445099044")),
+            tAttachments([])
+        ],
+        
+    ];
+
+    function tUser(fromId) {
+        if (fromId < 2000000000 && users[fromId]) {
+            var user = users[fromId];
+            return '<img src="' + user.photo200Orig + '" width="32" height="32"><br>' + user.firstName + ' ' + user.lastName;
+        } else
+            return 'o_0';
+    }
+
+    function tAttachments(attachments) {
+        if (attachments) {
+            var resultHtml = '';
+            attachments.forEach(function (attachment) {
+                switch (attachment.type) {
+                    case 'photo':
+                        resultHtml += '<a href="' + attachment.photo.photo604 + '" target="_blank"><img src="' + attachment.photo.photo130 + '" width="64" height="64"></a>';
+                        break;
+                    case 'sticker':
+                        resultHtml += '<img src="' + attachment.sticker.photo64 + '" width="64" height="64">';
+                        break;
+                    case 'gift':
+                        resultHtml += '<img src="' + attachment.gift.thumb96 + '" width="64" height="64">';
+                        break;
+                    case 'audio':
+                        resultHtml += '[audio: ' + attachment.audio.title + '], ';
+                        break;
+                    case 'doc':
+                        switch (attachment.doc.type) {
+                            case 5:
+                                resultHtml += '<a href="' + attachment.doc.url + '" target="_blank">[voice]</a>';
+                                break;
+                            default:
+                                resultHtml += '[doc: ' + attachment.doc.title + '], ';
+                                break;
+                        }
+                        break;
+                    default:
+                        resultHtml += attachment.type + ', ';
+                        break;
+                }
+            });
+            return resultHtml;
+        } else return '';
+    }
+
+    $(document).ready(function () {
+        $('#dialogs').DataTable({
+            data: messages,
+            ordering: false,
+            dom: '<"top"iflp<"clear">>rt<"bottom"iflp<"clear">>'
+        });
+    });
+</script>
+
+<table id="dialogs" class="display" cellspacing="0" width="100%">
+    <thead>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+        <th>Date</th>
+        <th>Attachments</th>
+    </tr>
+    </tfoot>
+</table>
+
+
+
+</body>
+</html>
